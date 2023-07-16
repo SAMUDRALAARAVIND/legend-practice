@@ -8,6 +8,8 @@ interface Product {
     productId: number;
 }
 
+console.log("edit for testing")
+
 export const Product: React.FC<{product: Product}> = ({product}) => {
     const [count, setCount] = useState(1);
     const cartRef = useContext(CartContext);
